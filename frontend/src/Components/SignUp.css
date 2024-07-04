@@ -1,0 +1,55 @@
+/* SignUp.css */
+/* SignUp.css */
+
+.modal-header {
+    background-color: #ffc107; /* Change to your desired background color */
+    color: #000; /* Change to your desired text color */
+  }
+  
+
+.modal-signin {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .modal-content {
+    background-color: #f8f9fa;
+  }
+  
+  .modal-header {
+    background-color: #28a745; /* Green color for header */
+    color: #fff;
+  }
+  
+  .modal-body {
+    padding: 2rem;
+  }
+  
+  .form-floating {
+    position: relative;
+  }
+  
+  .form-control {
+    padding: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .show-password-label {
+    margin-left: 0.5rem;
+  }
+  
+  /* Add more styles as needed */
+  

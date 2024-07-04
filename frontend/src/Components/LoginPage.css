@@ -1,0 +1,59 @@
+/* LoginPage.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-content {
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .login-heading {
+    text-align: center;
+    color: #0a0a0a;
+  }
+  
+  .form-floating {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .btn-primary {
+    background-color: #17b017;
+    border-color: #17b017;
+  }
+  
+  .btn-primary:hover {
+    background-color: #417d1e;
+    border-color: #417d1e;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .show-password-label {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .signup-link {
+    text-align: center;
+  }
+  
