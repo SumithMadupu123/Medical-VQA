@@ -70,6 +70,7 @@ The final output is the classified answer from the answer-space, reflecting the
 model's understanding and response to the input image and question.
 
 
+### Training Results
 
-**After the training we got an accuracy of 73%**
+**After training, we achieved an accuracy of 73%.**
 
