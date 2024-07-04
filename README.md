@@ -8,7 +8,7 @@ In this approach, we employ 'Late Fusion.' The concept behind late fusion involv
 
 ## FUSION ARCHITECTURE:
 
-REFER TO fusionArchitecture.png
+![Fusion Architecture](fusionArchitecture.png)
 
 • A text transformer (BERT) to encode the question and generate 
 embeddings
@@ -68,4 +68,9 @@ VQA is represented as a multiclass classification task in our model. Thus, cross
 
 The final output is the classified answer from the answer-space, reflecting the 
 model's understanding and response to the input image and question.
+
+
+### Training Results
+
+**After training, we achieved an accuracy of 73%.**
 
