@@ -10,10 +10,10 @@ In this approach, we employ 'Late Fusion.' The concept behind late fusion involv
 
 ![Fusion Architecture](fusionArchitecture.png)
 
-• A text transformer (BERT) to encode the question and generate 
+- A text transformer (BERT) to encode the question and generate 
 embeddings
-• An image transformer (ViT) to encode the image and generate features
-• A reasonably simple fusion layer that concatenates the textual and image 
+- An image transformer (ViT) to encode the image and generate features
+- A reasonably simple fusion layer that concatenates the textual and image 
 features and passes them through a linear layer to generate an intermediate 
 output
 
@@ -25,37 +25,37 @@ output
 ### Input Processing
 
 Model receives an image and corresponding question as input
-• **Text Processing**: Preprocessing and tokenization of text are done using a 
+- **Text Processing**: Preprocessing and tokenization of text are done using a 
 pre-trained ‘BERT base-uncased’ model.
-•  **Image Processing**: The image is initially divided into patches for further 
+-  **Image Processing**: The image is initially divided into patches for further 
 analysis by using ‘google/vit-base-patch 16-224-in21k’ model.
 
 ### Text Encoding (BERT):
 
-• The question is processed to obtain an encoded text representation.
-• **BERT Attention**: BERT attention is applied to the question, enabling the 
+- The question is processed to obtain an encoded text representation.
+- **BERT Attention**: BERT attention is applied to the question, enabling the 
 model to capture contextual information within the textual input.
-• The output of this BERT encoder is the features (numeric values) of the 
+- The output of this BERT encoder is the features (numeric values) of the 
 question that we provided.
 
 ### Image Encoding (ViT)
 
-• It divides input images into fixed-size patches, linearly embeds them, and 
+- It divides input images into fixed-size patches, linearly embeds them, and 
 utilizes a transformer encoder to capture both local and global 
 dependencies.
-• The attention mechanism in the Vision Transformer (ViT) is a key 
+- The attention mechanism in the Vision Transformer (ViT) is a key 
 component that enables the model to focus on relevant information within 
 images.
-• Feed-Forward Processing: Each patch undergoes feed-forward processing, 
+- **Feed-Forward Processing**: Each patch undergoes feed-forward processing, 
 contributing to the overall encoding of the image.
-• The output of the ViT is the features (numeric values) of the image that we 
+- The output of the ViT is the features (numeric values) of the image that we 
 provided
 
 ### Fusion Layer
 
-• In this fusion layer we fuse the features of text and image.
-• In this layer we use pooler output of the text encoder and image encoder.
-• This layer concatenates the pooler output from the text and image encoders, 
+- In this fusion layer we fuse the features of text and image.
+- In this layer we use pooler output of the text encoder and image encoder.
+- This layer concatenates the pooler output from the text and image encoders, 
 which are then passed to a linear layer to produce an intermediate output.
 
 ### Classifier
