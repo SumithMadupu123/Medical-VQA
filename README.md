@@ -69,3 +69,7 @@ VQA is represented as a multiclass classification task in our model. Thus, cross
 The final output is the classified answer from the answer-space, reflecting the 
 model's understanding and response to the input image and question.
 
+
+
+**After the training we got an accuracy of 73%**
+
