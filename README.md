@@ -8,7 +8,7 @@ In this approach, we employ 'Late Fusion.' The concept behind late fusion involv
 
 ## FUSION ARCHITECTURE:
 
-REFER TO fusionArchitecture.png
+![Fusion Architecture](fusionArchitecture.png)
 
 • A text transformer (BERT) to encode the question and generate 
 embeddings
