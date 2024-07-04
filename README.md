@@ -30,7 +30,7 @@ pre-trained ‘BERT base-uncased’ model.
 •  **Image Processing**: The image is initially divided into patches for further 
 analysis by using ‘google/vit-base-patch 16-224-in21k’ model.
 
-###Text Encoding (BERT):
+### Text Encoding (BERT):
 
 • The question is processed to obtain an encoded text representation.
 • **BERT Attention**: BERT attention is applied to the question, enabling the 
